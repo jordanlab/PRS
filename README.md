@@ -6,6 +6,6 @@ This pipeline discusses using the tool pgsc_calc to calcuate the risk score of a
 
 # Setting up pgsc_calc
 
-# Running the tool
+# Pipeline
 
 # Analysis
