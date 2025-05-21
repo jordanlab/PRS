@@ -2,11 +2,11 @@
 
 This folder contains setup instructions and usage notes for key tools used in the PRS analysis pipeline.
 
-## [PRSice-2](https://choishingwan.github.io/PRSice/)
+## [PRSice-2](https://github.com/ikingjordan3/PRS/tree/main/Tools/PRSice-2)
 - Fast and flexible tool for clumping + threshold-based PRS calculation
 - Used for baseline PRS score generation
 
-## [pgsc_calc](https://pgsc-calc.readthedocs.io/en/latest/)
+## [pgsc_calc](https://github.com/ikingjordan3/PRS/tree/main/Tools/pgsc_calc)
 - Official pipeline from the [Polygenic Score Catalog](https://www.pgscatalog.org/)
 - Run as a [Nextflow](https://www.nextflow.io/) workflow
 - Core to ancestry-adjusted normalization (see separate section)
