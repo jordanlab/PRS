@@ -18,7 +18,7 @@ This pipeline requires:
 ```bash
 curl -s https://get.sdkman.io | bash
 ```
-1.1 In a new terminal:
+In a new terminal:
 ```bash
 sdk install java 17.0.10-tem
 java -version #confirm installation
@@ -37,7 +37,6 @@ nextflow run pgscatalog/pgsc_calc -profile test,<docker/singularity/conda>
 | --------------------- | ------------------------------------------------------------------ |
 | `--target`            | PLINK genotype prefix                              |
 | `--pgs_id`            | PGS Catalog ID                                |
-| `--base` *(optional)* | Custom scoring file instead of automatic download                  |
 | `--target_build`      | Genome build of genotype files (`GRCh37` or `GRCh38`)              |
 | `--outdir`            | Output directory                                                   |
 | `--min_overlap`       | Minimum % of overlapping SNPs between score file and genotype data |
