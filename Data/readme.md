@@ -3,9 +3,9 @@
 This directory contains descriptions and metadata for the three cohorts used:
 
 ## [UK Biobank](https://github.com/ikingjordan3/PRS/tree/main/Data/UK%20Biobank)
-- **Source**: Preprocessed and imputed data on remote lab server
+- **Source**: Preprocessed and imputed data on teralab
 - **Format**: Binary PLINK files (`.bed/.bim/.fam`) and PCA projections
-- **Purpose**: Used as a benchmarking dataset to compare PRSice-2, PRS-CS, and pgsc_calc
+- Used as a benchmarking dataset to compare PRSice-2, PRSCs, and pgsc_calc
 
 ## [Lyday](https://github.com/ikingjordan3/PRS/tree/main/Data/Lyday)
 - **Source**: Raw VCF files from a collaborator.
