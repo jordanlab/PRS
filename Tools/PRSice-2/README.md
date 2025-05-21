@@ -1,7 +1,7 @@
 
 # PRSice-2
 
-PRSice-2 is a clumping and thresholding-based tool used for calculating Polygenic Risk Scores (PRS) across a range of p-value thresholds. 
+[PRSice-2](https://choishingwan.github.io/PRSice/) is a clumping and thresholding-based tool used for calculating Polygenic Risk Scores (PRS) across a range of p-value thresholds. 
 
 In this project, PRSice-2 was applied to the **UK Biobank** dataset to:
 - Benchmark PRS results alongside `pgsc_calc` and `PRScs`
@@ -28,12 +28,12 @@ install.packages("optparse")
 install.packages("broom")
 ```
 
-## Input files:
+## Input files
 1. **Base (GWAS) data**: Summary statistics file with SNPs and their effect sizes
 2. **Target data**: Genotype data in PLINK Binary or BGEN format
 3. **Phenotype** : Individual IDs with their case/control information
 
-## Output files:
+## Output files
 1. Bar Plot for various p-value thresholds
 2. High Resolution Plot for various p-value thresholds
 3. Quantile Plot with increasing PRS
@@ -42,7 +42,7 @@ install.packages("broom")
 6. `.log` file for each run
 7. `.best` file with final PRS for each individual 
 
-Sample Command:
+## Sample Command
 ```bash
 Rscript PRSice.R \
 --base <gwas> \
