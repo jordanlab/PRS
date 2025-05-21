@@ -2,12 +2,12 @@
 
 This directory contains descriptions for the three datasets used. Please note this section exists solely to describe the source, format, and preprocessing steps performed on each cohort.
 
-## [1.UK Biobank](https://www.ukbiobank.ac.uk/)
+## [1. UK Biobank](https://www.ukbiobank.ac.uk/)
 - **Source**: Preprocessed and imputed data on teralab
 - **Format**: Binary PLINK files (`.bed/.bim/.fam`) and PCA projections
 - Used as a benchmarking dataset to compare PRSice-2, PRScs, and pgsc_calc
 
-## 2.Lyday
+## 2. Lyday
 - **Source**: Raw VCF files from a collaborator.
 - **Processing Steps**:
   - Chromosome-level VCF merging
@@ -16,7 +16,7 @@ This directory contains descriptions for the three datasets used. Please note th
   - Conversion to PLINK format
 - **Notes**: Output from these steps was used for PRS calculation with `pgsc_calc`.
 
-## 3.All of Us
+## 3. All of Us
 - **Source**: [All of Us](https://allofus.nih.gov/)  genomic dataset
 - **Processing Steps**:
   - Subsetting individuals by self-identified race/ethnicity (SIRE): EUR, AFR, AMR
