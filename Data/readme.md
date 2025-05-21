@@ -2,12 +2,12 @@
 
 This directory contains descriptions and metadata for the three cohorts used:
 
-## [UK Biobank](#UKBiobank)
+## [UK Biobank](https://github.com/ikingjordan3/PRS/tree/main/Data/UK%20Biobank)
 - **Source**: Preprocessed and imputed data on remote lab server
 - **Format**: Binary PLINK files (`.bed/.bim/.fam`) and PCA projections
 - **Purpose**: Used as a benchmarking dataset to compare PRSice-2, PRS-CS, and pgsc_calc
 
-## [Lyday](#Lyday)
+## [Lyday](https://github.com/ikingjordan3/PRS/tree/main/Data/Lyday)
 - **Source**: Raw VCF files from a collaborator.
 - **Processing Steps**:
   - Chromosome-level VCF merging
@@ -16,7 +16,7 @@ This directory contains descriptions and metadata for the three cohorts used:
   - Conversion to PLINK format
 - **Notes**: Output from these steps was used for PRS calculation with `pgsc_calc`.
 
-## [All of Us](#AllofUs)
+## [All of Us](https://github.com/ikingjordan3/PRS/tree/main/Data/AllofUs)
 - **Source**: [All of Us genomic dataset](https://allofus.nih.gov/) 
 - **Processing Steps**:
   - Subsetting individuals by self-identified race/ethnicity (SIRE): EUR, AFR, AMR
