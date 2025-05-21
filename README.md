@@ -9,7 +9,7 @@ This pipeline is a reproducible workflow for calculating and validating PRS acro
 |--------|-------------|
 | [`Data/`](./Data/) | Describes each cohort: Lyday, All of Us, and UK Biobank. Includes info on preprocessing. |
 | [`Tools/`](./Tools/) | Contains usage notes for core tools like `pgsc_calc`, `PRSice-2`, `PRScs`, `Beagle`, and more. |
-| `Ancestry adjustment with pgsc_calc/` | Focuses on ancestry-normalized PRS and includes the logic replicated from the `pgsc_calc` framework. |
+| `Ancestry Adjustment/` | Focuses on ancestry-normalized PRS and includes the logic replicated from the `pgsc_calc` framework. |
 | [`Validation/`](./Validation/) | Scripts and results for statistical validation using R. |
 | `prs_pipeline/` | (Coming soon) Python-based CLI pipeline to modularly run each step with checkpointing. |
 
