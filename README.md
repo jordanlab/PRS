@@ -1,6 +1,6 @@
 # Polygenic Risk Score (PRS) Pipeline ![Status](https://img.shields.io/badge/Status-in%20progress-yellow)
 
-This Pipeline is a reproducible workflow for calculating and validating PRS across the UK Biobank, All of Us, and Lyday datasets. This pipeline leverages Python, R, and Nextflow to enable robust PRS analysis with ancestry adjustment and statistical validation.
+This pipeline is a reproducible workflow for calculating and validating PRS across the UK Biobank, All of Us, and Lyday datasets. This pipeline leverages Python, R, and Nextflow to enable robust PRS analysis with ancestry adjustment and statistical validation.
 
 
 ## Repo Structure
