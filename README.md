@@ -9,7 +9,7 @@ The pipeline is built using a combination of Python, R, and Nextflow workflows.
 | Folder | Description |
 |--------|-------------|
 | `Data/` | Describes each cohort: Lyday, All of Us, and UK Biobank. Includes info on preprocessing. |
-| `Tools/` | Contains usage notes for core tools like `pgsc_calc`, `PRSice-2`, `PRSCs`, `Beagle`, and more. |
+| `Tools/` | Contains usage notes for core tools like `pgsc_calc`, `PRSice-2`, `PRScs`, `Beagle`, and more. |
 | `Ancestry adjustment with pgsc_calc./` | Focuses on ancestry-normalized PRS and includes the logic replicated from the `pgsc_calc` framework. |
 | `Validation/` | Scripts and results for statistical validation using R. |
 | `prs_pipeline/` | (Coming soon) Python-based CLI pipeline to modularly run each step with checkpointing. |
