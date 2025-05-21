@@ -14,8 +14,6 @@ The pipeline is built using a combination of Python, R, and Nextflow workflows.
 | `Validation/` | Scripts and results for statistical validation using R. |
 | `prs_pipeline/` | (Coming soon) Python-based CLI pipeline to modularly run each step with checkpointing. |
 
----
-
 ## Datasets
 
 - **UK Biobank**: Used for testing and benchmarking PRS tools (data already imputed and standardized)
@@ -24,19 +22,17 @@ The pipeline is built using a combination of Python, R, and Nextflow workflows.
 
 Each dataset has its own documentation inside the `Data/` directory.
 
----
 
 ## Tools Utilised
 
 - [`pgsc_calc`](https://www.pgscatalog.org/): Nextflow-based official PRS scoring pipeline
-- [`PRSice-2`](https://www.prsice.info/): Clumping + thresholding tool
-- [`PRSCs`](https://github.com/getian107/PRScs): Bayesian regression method for PRS
-- [`Beagle`](https://faculty.washington.edu/browning/beagle/beagle.html): Imputation
+- [`PRSice-2`](https://choishingwan.github.io/PRSice/): Clumping + thresholding tool
+- [`PRScs`](https://github.com/getian107/PRScs): Bayesian regression method for PRS
+- [`Beagle 5.5`](https://faculty.washington.edu/browning/beagle/beagle.html): Imputation
 - [`conform-gt`](https://faculty.washington.edu/browning/conform-gt.html): Genotype harmonization
 - Python for pipeline scripting
 - R for statistical validation (e.g., AUC, Odds Ratio, Cohen’s d)
 
----
 
 ##  Getting Started
 
@@ -47,14 +43,11 @@ This project is under development. To reproduce or test:
 4. Validate the scores using the scripts in `Validation/`
 
 
----
 
 ## References
 
 - [Lambert et al. (2021), *The Polygenic Score Catalog as an open database for reproducibility and systematic evaluation.*](https://rdcu.be/em0At)
 - All of Us Research Program, *NIH*
-
----
 
 ## Maintained by
 
