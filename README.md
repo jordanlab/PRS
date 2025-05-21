@@ -1,9 +1,9 @@
-# Polygenic Risk Score (PRS) Pipeline
+# Polygenic Risk Score (PRS) Pipeline ![Status](https://img.shields.io/badge/Status-in%20progress-yellow)
 
 This repository hosts a reproducible pipeline for calculating and validating **Polygenic Risk Scores (PRS)** across three cohorts: **UK Biobank**, **All of Us**, and the **Lyday cohort**.
 
 The pipeline is built using a combination of Python, R, and Nextflow workflows.
-![Status](https://img.shields.io/badge/Status-in%20progress-yellow)
+
 
 ## Repo Structure
 
