@@ -51,7 +51,7 @@ This project is under development. To reproduce or test:
 
 ## Maintained by
 
-Valli Sree Lasya Pasumarthy (vpasumarthy3@gatech.edu) 
+Valli Sree Lasya Pasumarthy (vpasumarthy3@gatech.edu)  
 Graduate Research – Jordan Lab  
 Masters of Science in Bioinformatics,
 School of Biological Sciences, Georgia Institute of Technology
