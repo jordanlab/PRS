@@ -4,7 +4,7 @@ This repository hosts a reproducible pipeline for calculating and validating **P
 
 The pipeline is built using a combination of Python, R, and Nextflow workflows.
 
-## 📂 Repository Structure
+## Repo Structure
 
 | Folder | Description |
 |--------|-------------|
@@ -16,7 +16,7 @@ The pipeline is built using a combination of Python, R, and Nextflow workflows.
 
 ---
 
-## About the Datasets
+## Datasets
 
 - **UK Biobank**: Used for testing and benchmarking PRS tools (data already imputed and standardized)
 - **All of Us**: PRS calculation in addition to ancestry-adjustment using `pgsc_calc`
