@@ -3,7 +3,7 @@
 This directory contains descriptions for the three datasets used. Please note this section exists solely to describe the source, format, and preprocessing steps performed on each cohort.
 
 ## [1. UK Biobank](https://www.ukbiobank.ac.uk/)
-- **Source**: Preprocessed and imputed data on teralab
+- **Source**: Preprocessed and imputed data on teralab (`/home/sharedFolder/referenceData/ukb/`)
 - **Format**: Binary PLINK files (`.bed/.bim/.fam`) and PCA projections
 - Used as a benchmarking dataset to compare PRSice-2, PRScs, and pgsc_calc
 
