@@ -1,4 +1,5 @@
 # gradient_plot.R
+# This script plots the PRS obtained against observered prevalance of the trait 
 
 #library(dplyr)
 #library(tidyverse)
