@@ -17,6 +17,6 @@ Models optionally include:
 
 ## Outputs
 - Density plots of PRS distributions
-- Gradient plots of Prevalance of Disease vs Observed PRS 
+- Gradient plots of Observed Prevalance of Disease vs PRS 
 
 All validation was performed in R. These scripts can be adapted for any cohort or phenotype.
