@@ -11,7 +11,7 @@ This pipeline is a reproducible workflow for calculating and validating PRS for 
 | [`Tools/`](./Tools/) | Contains usage notes for core tools like `pgsc_calc`, `PRSice-2`, `PRScs`, `Beagle`, and more. |
 | `Ancestry Adjustment/` | Focuses on ancestry-normalized PRS and includes the logic replicated from the `pgsc_calc` framework. |
 | [`Validation/`](./Validation/) | Scripts and results for statistical validation using R. |
-| `prs_pipeline/` | (Coming soon) Python-based CLI pipeline to modularly run each step with checkpointing. |
+| `PRS_Pipeline/` | (Coming soon) Python-based CLI pipeline to modularly run each step with checkpointing. |
 
 ## Datasets
 
