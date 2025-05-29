@@ -1,6 +1,6 @@
 # PRS Validation & Evaluation
 
-This directory contains scripts and metrics used to validate PRS performance.
+This directory contains scripts used to validate PRS performance.
 
 ## Statistical Metrics
 - **AUC (Area Under Curve)**: Discriminative ability for binary traits
@@ -13,7 +13,7 @@ This directory contains scripts and metrics used to validate PRS performance.
 Models optionally include:
 - Age
 - Sex
-- Top 5 principal components (PCs)
+- Top 'n' principal components (PCs)
 
 ## Outputs
 - Density plots of PRS distributions
