@@ -8,9 +8,7 @@
 #Make sure columns include: FID, IID, PRS, Status (0/1), AVG. If the FID and status are in another file, merge them before proceeding
 
 data <- read.table("<scores_file>", header = TRUE) 
-
 #<scores_file> - .best for PRSice-2, .txt for pgsc_calc
-
 
 #----Group individuals by PRS percentiles----
 data <- data %>%
@@ -31,4 +29,4 @@ ggplot(risk_gradient, aes(x = percentile, y = prevalence)) +
   ) +
   theme_minimal()
 
-#Additional features can be added as per user's requirement
+# Additional features can be added as per user's requirement
