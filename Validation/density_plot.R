@@ -2,8 +2,8 @@
 # This script plots PRS density distributions for cases and controls
 
 #library(dplyr)
-#library(ggplot2)
 #library(tidyverse)
+#library(ggplot2)
 
 #----Load data----
 #Make sure columns include: FID, IID, PRS, Status (0 = control, 1 = case)
@@ -23,6 +23,3 @@ ggplot(data, aes(x = PRS, fill = as.factor(Status))) +
     labels = c("Controls", "Cases")
   ) 
   theme_minimal()
-
-# Optional: save the plot
-# ggsave("density_plot.png", width = 7, height = 5)
