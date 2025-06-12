@@ -17,10 +17,12 @@ This directory contains descriptions for the three datasets used. Please note th
 - **Notes**: Output from these steps was used for PRS calculation with `pgsc_calc`.
 
 ## 3. All of Us
-- **Source**: [All of Us](https://allofus.nih.gov/)  genomic dataset
+- **Source**: [All of Us](https://allofus.nih.gov/) genomic dataset
 - **Processing Steps**:
+  - Building Case-Control Cohort using the All of Us cohort builder (*Add the cohort image*)
   - Subsetting individuals by self-identified race/ethnicity (SIRE): EUR, AFR, AMR
-  - Filtering variants to match those in scoring files
+  - Individuals with age & sex present in the reported data
+  - Filtering variants to match those in scoring files (*Cromwell and ACAF*)
   - Extracting PCs for ancestry normalization
 
 All analysis was conducted on a remote server; data was not transferred locally or externally.  
