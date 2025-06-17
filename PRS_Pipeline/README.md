@@ -28,14 +28,15 @@ The pipeline is built using:
 
 ### 1️. Clone the repository
 ```bash
-git clone https://github.com/your_username/PRS_Pipeline.git
-cd PRS_Pipeline
+git clone https://github.com/jordanlab/PRS_Pipeline.git
+cd PRS_Pipeline/
 ```
 
 ### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
+Any additional dependencies and profiles can be set up by the user.
 
 ### 3. Run the steps
 
