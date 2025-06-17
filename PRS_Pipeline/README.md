@@ -19,7 +19,7 @@ The pipeline is built using:
 |--------------------|---------|
 | `steps/`           | Python step-wise modules: `preprocess`, `run_pgsc_calc`, and `validate` |
 | `main.py`          | Entry-point CLI script to run any step interactively |
-| `config.yaml`      | User-editable configuration (file paths, settings) |
+| `config.yaml`      | User-editable configuration |
 | `requirements.txt` | Python dependencies |
 
 ---
