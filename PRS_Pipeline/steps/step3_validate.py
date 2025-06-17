@@ -28,7 +28,7 @@ def run(config):
     if not os.path.isfile(prs_file):
         print("Error: File not found.")
         return
-
+    os.makedirs(op_dir, exist_ok = True)
     data = pd.read_csv(prs_file, sep="\t" if prs_file.endswith(".txt") else ",")
     if "Sex" in data.columns and data["Sex"].dtype == "object":
          print("Converting 'Sex' from Male/Female to 0/1...")
