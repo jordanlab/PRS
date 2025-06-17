@@ -1,4 +1,4 @@
-#  Polygenic Risk Score (PRS) Pipeline
+#  Polygenic Risk Score (PRS) Pipeline  ![Status](https://img.shields.io/badge/Status-in%20progress-yellow)
 
 This repository contains a reproducible pipeline for computing and validating Polygenic Risk Scores (PRS) using diverse genomic cohorts, including:
 
