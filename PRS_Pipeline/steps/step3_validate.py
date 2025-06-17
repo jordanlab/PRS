@@ -23,8 +23,8 @@ def cohen_d(x, y):
 def run(config):
     print("Step 3: Validating PRS")
 
-    prs_file = input("Enter absolute path to merged (PRS + phenotype file): ").strip()
-
+    prs_file = config.get("data_file")
+    op_dir = config.get("val_op_dir")
     if not os.path.isfile(prs_file):
         print("Error: File not found.")
         return
@@ -97,7 +97,7 @@ def run(config):
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig("auc_comparison.png")
+    plt.savefig(f"{op_dir}/auc_comparison.png")
     plt.close()
 
     print("[STEP 3] Validation complete. Output saved to auc_comparison.png")
