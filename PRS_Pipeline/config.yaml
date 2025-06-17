@@ -1,0 +1,13 @@
+#config.yaml
+
+#Step 1: Preprocessing
+genotype_prefix: "/home/sharedFolder/referenceData/ukb/genotypes/ukb22418_c22_b0_v2"  #Example: /home/sharedFolder/referenceData/ukb/genotypes/ukb22418_*
+
+#Step 2: pgsc_calc
+output_dir: "/home/vpasumarthy3/pgsc_results/pipeline_test/" #Final output folder
+target_build: "GRCh37"            #GRCh37 or GRCh38
+profile: "conda"                 #docker, conda, or singularity
+
+#Step 3: Validation
+data_file: "/home/vpasumarthy3/pgsc_results/merged_2308.csv"        #Merged PRS + phenotype file
+validation_output: "/home/vpasuamrthy3/pgsc_results/pipeline_test/val/"  #Folder for output plots/stats

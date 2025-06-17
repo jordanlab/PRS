@@ -1,0 +1,429 @@
+Jun-16 14:54:16.717 [main] DEBUG nextflow.cli.Launcher - $> nextflow run pgscatalog/pgsc_calc -profile conda --input /home/vpasumarthy3/pgsc_results/genotypes.csv --pgs_id PGS002308 --target_build GRCh37 --outdir /home/vpasumarthy3/pgsc_results/pipeline_test --min_overlap 0.1
+Jun-16 14:54:16.774 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.3
+Jun-16 14:54:16.803 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/vpasumarthy3/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Jun-16 14:54:16.824 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-16 14:54:16.825 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-16 14:54:16.828 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jun-16 14:54:16.842 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-16 14:54:16.858 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/vpasumarthy3/.nextflow/scm
+Jun-16 14:54:17.729 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/.git/config; branch: main; remote: origin; url: https://github.com/PGScatalog/pgsc_calc.git
+Jun-16 14:54:17.774 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Jun-16 14:54:17.782 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/.git/config; branch: main; remote: origin; url: https://github.com/PGScatalog/pgsc_calc.git
+Jun-16 14:54:21.375 [main] INFO  nextflow.scm.AssetManager - NOTE: Your local project version looks outdated - a different revision is available in the remote repository [60a1026ec1]
+Jun-16 14:54:21.384 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/nextflow.config
+Jun-16 14:54:21.386 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/nextflow.config
+Jun-16 14:54:21.391 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/vpasumarthy3/.nextflow/secrets/store.json
+Jun-16 14:54:21.393 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6f25bf88] - activable => nextflow.secret.LocalSecretsProvider@6f25bf88
+Jun-16 14:54:21.403 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `conda`
+Jun-16 14:54:22.032 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, giga, incliva, ilifu, ki_luria, uge, icr_alma, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, roslin, tes, scw, unc_longleaf, tigem, tubingen_apg, google, apollo, ipop_up, vsc_calcua, pdc_kth, googlels, ceci_nic5, ccga_cau, humantechnopole, stjude, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, seattlechildrens, icr_davros, ceres, munin, arm, rosalind, hasta, cfc, uzh, shu_bmrc, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, biohpc_gen, shifter, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, cannon, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, kaust, alliance_canada, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, seg_globe, mssm, sanger, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, seadragon, crukmi, csiro_petrichor, qmul_apocrita, docker, engaging, gis, hypatia, psmn, eva, unity, cropdiversityhpc, nygc, fgcz, conda, crg, singularity, mpcdf_viper, pe2, self_hosted_runner, tufts, uw_hyak_pedslabs, binac2, debug, genouest, cbe, unsw_katana, phoenix, gitpod, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac, fsu_draco]
+Jun-16 14:54:22.070 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jun-16 14:54:22.071 [main] DEBUG nextflow.cli.CmdRun - Launching `https://github.com/pgscatalog/pgsc_calc` [condescending_euler] DSL2 - revision: 205cbfd1f5 [main]
+Jun-16 14:54:22.073 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.0.0, nf-prov@1.2.2]
+Jun-16 14:54:22.073 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-16 14:54:22.073 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.0.0, nf-prov@1.2.2]
+Jun-16 14:54:22.073 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.0.0
+Jun-16 14:54:22.093 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.0.0' resolved
+Jun-16 14:54:22.093 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.0.0'
+Jun-16 14:54:22.143 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.0.0
+Jun-16 14:54:22.143 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-prov version: 1.2.2
+Jun-16 14:54:22.161 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-prov@1.2.2' resolved
+Jun-16 14:54:22.162 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-prov@1.2.2'
+Jun-16 14:54:22.179 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-prov@1.2.2
+Jun-16 14:54:22.227 [main] DEBUG nextflow.Session - Session UUID: b49d36d5-956f-49d0-a776-03a5fc8f0fc5
+Jun-16 14:54:22.227 [main] DEBUG nextflow.Session - Run name: condescending_euler
+Jun-16 14:54:22.227 [main] DEBUG nextflow.Session - Executor pool size: 80
+Jun-16 14:54:22.234 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-16 14:54:22.238 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jun-16 14:54:22.258 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.3 build 5933
+  Created: 16-12-2024 15:34 UTC (10:34 EDT)
+  System: Linux 5.14.0-570.16.1.el9_6.x86_64
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 11.0.25+9-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 2808192@bio-compjord01.biosci.gatech.edu [130.207.66.26]
+  CPUs: 80 - Mem: 1.5 TB (355 GB) - Swap: 32 GB (32 GB)
+Jun-16 14:54:22.271 [main] DEBUG nextflow.Session - Work-dir: /home/vpasumarthy3/PRS/PRS_Pipeline/work [xfs]
+Jun-16 14:54:22.271 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/bin
+Jun-16 14:54:22.303 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-16 14:54:22.313 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-16 14:54:22.330 [main] DEBUG nextflow.Session - Observer factory: ProvObserverFactory
+Jun-16 14:54:22.492 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-16 14:54:22.500 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 81; maxThreads: 1000
+Jun-16 14:54:22.686 [main] DEBUG nextflow.Session - Session start
+Jun-16 14:54:22.688 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/vpasumarthy3/pgsc_results/pipeline_test/pipeline_info/execution_trace_2025-06-16_14-54-21.txt
+Jun-16 14:54:22.693 [main] DEBUG nextflow.Session - Using default localLib path: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/lib
+Jun-16 14:54:22.696 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/lib
+Jun-16 14:54:23.069 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-16 14:54:23.079 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Jun-16 14:54:23.564 [main] WARN  nextflow.Nextflow - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  There is a problem with your Conda configuration!
+
+  You will need to set-up the conda-forge and bioconda channels correctly.
+  Please refer to https://bioconda.github.io/
+  The observed channel order is 
+  [bioconda, defaults]
+  but the following channel order is required:
+  [conda-forge, bioconda, defaults]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Jun-16 14:54:23.973 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters, paramsSummaryLog:paramsSummaryLog, paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Jun-16 14:54:24.077 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+[0;35m  pgscatalog/pgsc_calc v2.0.0-g205cbfd[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision   : [0;32mmain[0m
+  [0;34mrunName    : [0;32mcondescending_euler[0m
+  [0;34mlaunchDir  : [0;32m/home/vpasumarthy3/PRS/PRS_Pipeline[0m
+  [0;34mworkDir    : [0;32m/home/vpasumarthy3/PRS/PRS_Pipeline/work[0m
+  [0;34mprojectDir : [0;32m/home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc[0m
+  [0;34muserName   : [0;32mvpasumarthy3[0m
+  [0;34mprofile    : [0;32mconda[0m
+  [0;34mconfigFiles: [0;32m[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use pgscatalog/pgsc_calc for your analysis please cite:
+
+* The Polygenic Score Catalog
+  https://doi.org/10.1101/2024.05.29.24307783
+  https://doi.org/10.1038/s41588-021-00783-5
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/pgscatalog/pgsc_calc/blob/main/CITATIONS.md
+
+Jun-16 14:54:26.798 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES
+Jun-16 14:54:26.799 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:pgscatalog_utils` matches labels `process_medium,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES
+Jun-16 14:54:26.813 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:26.813 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:26.818 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-16 14:54:26.823 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=80; memory=1.5 TB; capacity=80; pollInterval=100ms; dumpInterval=5m
+Jun-16 14:54:26.825 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-16 14:54:26.967 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:INPUT_CHECK:COMBINE_SCOREFILES
+Jun-16 14:54:26.967 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:pgscatalog_utils` matches labels `process_medium,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:INPUT_CHECK:COMBINE_SCOREFILES
+Jun-16 14:54:26.968 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COMBINE_SCOREFILES` matches process PGSCATALOG_PGSCCALC:PGSCCALC:INPUT_CHECK:COMBINE_SCOREFILES
+Jun-16 14:54:26.970 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:26.970 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.020 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low,plink2` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM
+Jun-16 14:54:27.020 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:plink2` matches labels `process_low,plink2` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM
+Jun-16 14:54:27.021 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PLINK2_RELABELBIM` matches process PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM
+Jun-16 14:54:27.026 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:27.026 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.043 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low,plink2` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELPVAR
+Jun-16 14:54:27.044 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:plink2` matches labels `process_low,plink2` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELPVAR
+Jun-16 14:54:27.044 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PLINK2_RELABELPVAR` matches process PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELPVAR
+Jun-16 14:54:27.046 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:27.046 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.060 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium,plink2` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_VCF
+Jun-16 14:54:27.060 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:plink2` matches labels `process_medium,plink2` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_VCF
+Jun-16 14:54:27.061 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PLINK2_VCF` matches process PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_VCF
+Jun-16 14:54:27.063 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:27.063 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.116 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_VARIANTS
+Jun-16 14:54:27.116 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:pgscatalog_utils` matches labels `process_medium,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_VARIANTS
+Jun-16 14:54:27.117 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MATCH_VARIANTS|MATCH_COMBINE` matches process PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_VARIANTS
+Jun-16 14:54:27.119 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:27.119 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.151 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_COMBINE
+Jun-16 14:54:27.152 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:pgscatalog_utils` matches labels `process_medium,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_COMBINE
+Jun-16 14:54:27.152 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MATCH_VARIANTS|MATCH_COMBINE` matches process PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_COMBINE
+Jun-16 14:54:27.153 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:27.154 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.193 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low,process_long,plink2` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:PLINK2_SCORE
+Jun-16 14:54:27.194 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_long` matches labels `process_low,process_long,plink2` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:PLINK2_SCORE
+Jun-16 14:54:27.194 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:plink2` matches labels `process_low,process_long,plink2` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:PLINK2_SCORE
+Jun-16 14:54:27.194 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PLINK2_SCORE` matches process PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:PLINK2_SCORE
+Jun-16 14:54:27.197 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:27.197 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.228 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high_memory` matches labels `process_high_memory,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:SCORE_AGGREGATE
+Jun-16 14:54:27.230 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:pgscatalog_utils` matches labels `process_high_memory,pgscatalog_utils` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:SCORE_AGGREGATE
+Jun-16 14:54:27.231 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:27.232 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.262 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high_memory` matches labels `process_high_memory,report` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:REPORT:SCORE_REPORT
+Jun-16 14:54:27.262 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:report` matches labels `process_high_memory,report` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:REPORT:SCORE_REPORT
+Jun-16 14:54:27.263 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PGSCATALOG_GET|SCORE_REPORT` matches process PGSCATALOG_PGSCCALC:PGSCCALC:REPORT:SCORE_REPORT
+Jun-16 14:54:27.264 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:27.265 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.285 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:pyyaml` matches labels `pyyaml` for process with name PGSCATALOG_PGSCCALC:PGSCCALC:DUMPSOFTWAREVERSIONS
+Jun-16 14:54:27.286 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DUMPSOFTWAREVERSIONS` matches process PGSCATALOG_PGSCCALC:PGSCCALC:DUMPSOFTWAREVERSIONS
+Jun-16 14:54:27.287 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-16 14:54:27.287 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-16 14:54:27.290 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+Jun-16 14:54:27.291 [main] DEBUG nextflow.Session - Igniting dataflow network (32)
+Jun-16 14:54:27.292 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES
+Jun-16 14:54:27.307 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:INPUT_CHECK:COMBINE_SCOREFILES
+Jun-16 14:54:27.309 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM
+Jun-16 14:54:27.310 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELPVAR
+Jun-16 14:54:27.311 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_VCF
+Jun-16 14:54:27.313 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_VARIANTS
+Jun-16 14:54:27.314 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_COMBINE
+Jun-16 14:54:27.316 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:PLINK2_SCORE
+Jun-16 14:54:27.317 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:SCORE_AGGREGATE
+Jun-16 14:54:27.322 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:REPORT:SCORE_REPORT
+Jun-16 14:54:27.323 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PGSCATALOG_PGSCCALC:PGSCCALC:DUMPSOFTWAREVERSIONS
+Jun-16 14:54:27.327 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_6c7f1975e3fb3b69: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/oadp/fraposa_pca.nf
+  Script_f7e6cf6aaa57ea1f: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/ancestry/ancestry_analysis.nf
+  Script_3192a83c982d60fd: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/ancestry/relabel_afreq.nf
+  Script_427b79f8ec452926: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/extract_database.nf
+  Script_f1f44f8cbf10b8ac: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/report.nf
+  Script_951dc19390c5c741: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/combine_scorefiles.nf
+  Script_12c9a6a07f86b4fa: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../modules/local/download_scorefiles.nf
+  Script_755713ec2b43081e: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/pgsc_calc.nf
+  Script_67ef02006e15f7bf: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/bootstrap/make_database.nf
+  Script_e72266e4c23a6709: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/bootstrap_ancestry.nf
+  Script_8e6f8bb44fe47fd9: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/score_report.nf
+  Script_49dad12165a607ad: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/main.nf
+  Script_af7d999c868fc751: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/plink2_relabelpvar.nf
+  Script_7c3cf274b5f55d48: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/oadp/plink2_makebed.nf
+  Script_7877cbba589aaba3: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/plink2_relabelbim.nf
+  Script_ddfebfdd3f2163fa: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/oadp/intersect_thinned.nf
+  Script_e8e89f1db16463e9: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/input_check.nf
+  Script_9cb3ca6d09bec8b1: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/apply_score.nf
+  Script_0fa47898366f4cc3: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/make_compatible.nf
+  Script_b44d5e652fec57af: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/score_aggregate.nf
+  Script_dac204016b7d984d: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/match_combine.nf
+  Script_f7586381070cd5d9: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/plink2_vcf.nf
+  Script_7471b788f1a2a9d3: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/filter_variants.nf
+  Script_a1be163d058c7f54: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../modules/local/dumpsoftwareversions.nf
+  Script_7237b9b1d4f9edb3: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/bootstrap/setup_resource.nf
+  Script_bce5fb3c34601cd2: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/ancestry/relabel_scorefiles.nf
+  Script_b6e41778bc295ecb: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/oadp/fraposa_project.nf
+  Script_b5fbc4cc5ec915c5: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/plink2_score.nf
+  Script_27f93d0e8e1609f8: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/../../modules/local/match_variants.nf
+  Script_2b923d1099c3fc9c: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/ancestry_project.nf
+  Script_75119a130470a3ec: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/oadp/plink2_orient.nf
+  Script_610f3cd49143490f: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/intersect_variants.nf
+  Script_d992248657715d07: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/match.nf
+  Script_9484cf4d32ea80d5: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/./workflows/../subworkflows/local/ancestry/../../../modules/local/ancestry/relabel_ids.nf
+Jun-16 14:54:27.327 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-16 14:54:27.328 [main] DEBUG nextflow.Session - Session await
+Jun-16 14:54:27.461 [Actor Thread 81] INFO  nextflow.conda.CondaCache - Creating env using conda: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/environments/plink2/environment.yml [cache /home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-ee63c3b2fb38ad14-db481d3e4f536fc13b3b55e4c0edd01f]
+Jun-16 14:54:27.461 [Actor Thread 51] INFO  nextflow.conda.CondaCache - Creating env using conda: /home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/environments/pgscatalog_utils/environment.yml [cache /home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8]
+Jun-16 14:56:36.142 [Actor Thread 81] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=/home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/environments/plink2/environment.yml path=/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-ee63c3b2fb38ad14-db481d3e4f536fc13b3b55e4c0edd01f
+Jun-16 14:56:36.229 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.230 [Task submitter] INFO  nextflow.Session - [41/e0c2c4] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 9)
+Jun-16 14:56:36.238 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.239 [Task submitter] INFO  nextflow.Session - [b5/02143c] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 17)
+Jun-16 14:56:36.244 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.244 [Task submitter] INFO  nextflow.Session - [65/054dfa] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 11)
+Jun-16 14:56:36.250 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.251 [Task submitter] INFO  nextflow.Session - [ac/7f29e5] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 18)
+Jun-16 14:56:36.256 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.256 [Task submitter] INFO  nextflow.Session - [9a/532d0b] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 14)
+Jun-16 14:56:36.262 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.262 [Task submitter] INFO  nextflow.Session - [ed/2c658d] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 8)
+Jun-16 14:56:36.266 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.266 [Task submitter] INFO  nextflow.Session - [e4/b01122] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 21)
+Jun-16 14:56:36.273 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.273 [Task submitter] INFO  nextflow.Session - [5a/d623f7] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 20)
+Jun-16 14:56:36.278 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.279 [Task submitter] INFO  nextflow.Session - [99/95388d] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 12)
+Jun-16 14:56:36.285 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.285 [Task submitter] INFO  nextflow.Session - [a8/7d2401] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 10)
+Jun-16 14:56:36.290 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.291 [Task submitter] INFO  nextflow.Session - [23/352caf] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 22)
+Jun-16 14:56:36.299 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.299 [Task submitter] INFO  nextflow.Session - [0f/4659df] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 1)
+Jun-16 14:56:36.303 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.304 [Task submitter] INFO  nextflow.Session - [f2/c3844f] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 4)
+Jun-16 14:56:36.309 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.310 [Task submitter] INFO  nextflow.Session - [46/618931] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 16)
+Jun-16 14:56:36.314 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.314 [Task submitter] INFO  nextflow.Session - [2e/3ebc8e] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 19)
+Jun-16 14:56:36.320 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.320 [Task submitter] INFO  nextflow.Session - [2b/2334d8] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 15)
+Jun-16 14:56:36.324 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.325 [Task submitter] INFO  nextflow.Session - [ac/f764fa] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 3)
+Jun-16 14:56:36.329 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.330 [Task submitter] INFO  nextflow.Session - [3b/a6b75c] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 7)
+Jun-16 14:56:36.334 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.334 [Task submitter] INFO  nextflow.Session - [36/254141] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 2)
+Jun-16 14:56:36.339 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.339 [Task submitter] INFO  nextflow.Session - [01/8c1674] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 6)
+Jun-16 14:56:36.344 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.344 [Task submitter] INFO  nextflow.Session - [59/0d3306] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 5)
+Jun-16 14:56:36.350 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 14:56:36.351 [Task submitter] INFO  nextflow.Session - [4e/a5eb69] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 13)
+Jun-16 14:56:58.210 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 22); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/23/352caf5b18198ee8644cdbf1feb886]
+Jun-16 14:56:58.211 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jun-16 14:57:06.951 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 18); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/ac/7f29e5162104402da70aa0dd481cae]
+Jun-16 14:57:14.978 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 15); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/2b/2334d8630740097251b6cba940d0ed]
+Jun-16 14:57:15.570 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 17); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/b5/02143c45f7f913d1a4e4d5df4a8ed1]
+Jun-16 14:57:15.968 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 16); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/46/61893107022f8175694e3a0bee874a]
+Jun-16 14:57:15.983 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 19); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/2e/3ebc8e7ae6cbc12ab2c86560417078]
+Jun-16 14:57:16.068 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 21); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/e4/b01122487cc10223fd2c00a327a236]
+Jun-16 14:57:16.097 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 20); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/5a/d623f7cf9d42bf370d2308c0193611]
+Jun-16 14:57:16.130 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 14); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/9a/532d0b0d82ed4336580265c726961a]
+Jun-16 14:57:16.590 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 13); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/4e/a5eb69e99f3f373559e3c0fd56abc8]
+Jun-16 14:57:28.407 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 9); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/41/e0c2c4134b5ed1efb5a34590522389]
+Jun-16 14:57:28.435 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 8); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/ed/2c658de3ed472ef7b89dd4ad9cac69]
+Jun-16 14:57:28.435 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 12); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/99/95388dadd174112e03f5a069edae1a]
+Jun-16 14:57:28.436 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 10); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/a8/7d24017d57b4cbe8be857d6b38a928]
+Jun-16 14:57:32.191 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 11); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/65/054dfaa311f236f1d6f6cc93cbf0e4]
+Jun-16 14:57:33.222 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 5); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/59/0d33060f9d2a59648044abf133fdaf]
+Jun-16 14:57:33.738 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 7); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/3b/a6b75c57a0ea26b3ca105c98831d07]
+Jun-16 14:57:35.566 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 4); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/f2/c3844f66bfbf45ff475e28752b1d86]
+Jun-16 14:57:36.500 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 3); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/ac/f764fa22c469a2ec4ce39487900936]
+Jun-16 14:57:37.676 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 6); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/01/8c1674e39376e7624349f69bbef2c4]
+Jun-16 14:57:39.387 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 2); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/36/25414119676f1258597f547f65a3ca]
+Jun-16 14:57:41.395 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: PGSCATALOG_PGSCCALC:PGSCCALC:MAKE_COMPATIBLE:PLINK2_RELABELBIM (ukb chromosome 1); status: COMPLETED; exit: 0; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/0f/4659dfce8e46fab6767fce78b85fc4]
+Jun-16 14:59:27.015 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > No more task to compute -- The following nodes are still active:
+[process] PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES
+  status=ACTIVE
+  port 0: (value) bound ; channel: meta
+  port 1: (value) bound ; channel: build
+  port 2: (cntrl) -     ; channel: $
+
+[process] PGSCATALOG_PGSCCALC:PGSCCALC:INPUT_CHECK:COMBINE_SCOREFILES
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: raw_scores
+  port 1: (queue) OPEN  ; channel: reference
+  port 2: (cntrl) -     ; channel: $
+
+[process] PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_VARIANTS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] PGSCATALOG_PGSCCALC:PGSCCALC:MATCH:MATCH_COMBINE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:PLINK2_SCORE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] PGSCATALOG_PGSCCALC:PGSCCALC:APPLY_SCORE:SCORE_AGGREGATE
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: -
+  port 1: (value) OPEN  ; channel: scorefile_vars
+  port 2: (value) OPEN  ; channel: scored_vars
+  port 3: (cntrl) -     ; channel: $
+
+[process] PGSCATALOG_PGSCCALC:PGSCCALC:REPORT:SCORE_REPORT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: intersect_count
+  port 2: (value) bound ; channel: reference_panel_name
+  port 3: (value) bound ; channel: report_path
+  port 4: (cntrl) -     ; channel: $
+
+[process] PGSCATALOG_PGSCCALC:PGSCCALC:DUMPSOFTWAREVERSIONS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: versions
+  port 1: (cntrl) -     ; channel: $
+
+Jun-16 15:00:48.783 [Actor Thread 51] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=/home/vpasumarthy3/.nextflow/assets/pgscatalog/pgsc_calc/environments/pgscatalog_utils/environment.yml path=/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8
+Jun-16 15:00:48.795 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-16 15:00:48.795 [Task submitter] INFO  nextflow.Session - [68/98de26] Submitted process > PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES ([pgs_id:PGS002308, pgp_id:, trait_efo:])
+Jun-16 15:04:27.080 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES ([pgs_id:PGS002308, pgp_id:, trait_efo:]); status: RUNNING; exit: -; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/68/98de26ae2c0885caf81b8c5a8f0cdd]
+Jun-16 15:09:27.137 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES ([pgs_id:PGS002308, pgp_id:, trait_efo:]); status: RUNNING; exit: -; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/68/98de26ae2c0885caf81b8c5a8f0cdd]
+Jun-16 15:12:42.277 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES ([pgs_id:PGS002308, pgp_id:, trait_efo:]); status: COMPLETED; exit: 8; error: -; workDir: /home/vpasumarthy3/PRS/PRS_Pipeline/work/68/98de26ae2c0885caf81b8c5a8f0cdd]
+Jun-16 15:12:42.282 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES ([pgs_id:PGS002308, pgp_id:, trait_efo:]); work-dir=/home/vpasumarthy3/PRS/PRS_Pipeline/work/68/98de26ae2c0885caf81b8c5a8f0cdd
+  error [nextflow.exception.ProcessFailedException]: Process `PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES ([pgs_id:PGS002308, pgp_id:, trait_efo:])` terminated with an error exit status (8)
+Jun-16 15:12:42.321 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES ([pgs_id:PGS002308, pgp_id:, trait_efo:])'
+
+Caused by:
+  Process `PGSCATALOG_PGSCCALC:PGSCCALC:DOWNLOAD_SCOREFILES ([pgs_id:PGS002308, pgp_id:, trait_efo:])` terminated with an error exit status (8)
+
+
+Command executed:
+
+  pgscatalog-download -i PGS002308                                    -b GRCh37         -o $PWD         -v         -c pgsc_calc/2.0.0
+  
+  cat <<-END_VERSIONS > versions.yml
+  DOWNLOAD_SCOREFILES:
+      pgscatalog.core: $(echo $(python -c 'import pgscatalog.core; print(pgscatalog.core.__version__)'))
+  END_VERSIONS
+
+Command exit status:
+  8
+
+Command output:
+  (empty)
+
+Command error:
+      return self.__get_result()
+             ^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+      raise self._exception
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/tenacity/__init__.py", line 478, in __call__
+      result = fn(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/pgscatalog/core/lib/_download.py", line 83, in ftp_fallback
+      raise ScoreDownloadError(f"Can't download {ftp_url} over FTP") from download_exc
+  pgscatalog.core.lib.pgsexceptions.ScoreDownloadError: Can't download ftp://ftp.ebi.ac.uk/pub/databases/spot/pgs/scores/PGS002308/ScoringFiles/Harmonized/PGS002308_hmPOS_GRCh37.txt.gz over FTP
+  
+  The above exception was the direct cause of the following exception:
+  
+  Traceback (most recent call last):
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/bin/pgscatalog-download", line 10, in <module>
+      sys.exit(run())
+               ^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/pgscatalog/core/cli/download_cli.py", line 62, in run
+      future.result()
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+      return self.__get_result()
+             ^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+      raise self._exception
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+      result = self.fn(*self.args, **self.kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/pgscatalog/core/lib/scorefiles.py", line 304, in download
+      https_download(
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+      return copy(f, *args, **kw)
+             ^^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/tenacity/__init__.py", line 475, in __call__
+      do = self.iter(retry_state=retry_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+      result = action(retry_state)
+               ^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+      return copy(f, *args, **kw)
+             ^^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/tenacity/__init__.py", line 475, in __call__
+      do = self.iter(retry_state=retry_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+      result = action(retry_state)
+               ^^^^^^^^^^^^^^^^^^^
+    File "/home/vpasumarthy3/PRS/PRS_Pipeline/work/conda/env-80367648636965f4-00caea0fd1502b3025f862b501a2cce8/lib/python3.12/site-packages/pgscatalog/core/lib/_download.py", line 30, in score_download_failed
+      raise ScoreDownloadError("All download retries failed") from download_exc
+  pgscatalog.core.lib.pgsexceptions.ScoreDownloadError: All download retries failed
+
+Work dir:
+  /home/vpasumarthy3/PRS/PRS_Pipeline/work/68/98de26ae2c0885caf81b8c5a8f0cdd
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Jun-16 15:12:42.325 [TaskFinalizer-3] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Jun-16 15:12:42.335 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-16 15:12:42.347 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-16 15:12:42.347 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-16 15:12:42.356 [Actor Thread 74] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.002 s; external sort time: 0.023 s; total time: 0.025 s
+Jun-16 15:12:42.363 [Actor Thread 74] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/vpasumarthy3/PRS/PRS_Pipeline/work/collect-file/8c57e5d36c9b022ac58950fbf24a559a
+Jun-16 15:12:42.374 [Actor Thread 74] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-1475705188192163972
+Jun-16 15:12:42.378 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jun-16 15:12:42.399 [main] INFO  nextflow.Nextflow - -[0;35m[pgscatalog/pgsc_calc][0;31m Pipeline completed with errors[0m-
+Jun-16 15:12:42.403 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=22; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=34m 9s; failedDuration=23m 47s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=22; peakCpus=44; peakMemory=176 GB; ]
+Jun-16 15:12:42.403 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Jun-16 15:12:42.404 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Jun-16 15:12:42.943 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Jun-16 15:12:43.223 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-16 15:12:43.239 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-prov@1.2.2'
+Jun-16 15:12:43.240 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-prov
+Jun-16 15:12:43.240 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-schema@2.0.0'
+Jun-16 15:12:43.240 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-schema
+Jun-16 15:12:43.241 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jun-16 15:12:43.242 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -30,8 +30,12 @@ def run(config):
         return
 
     data = pd.read_csv(prs_file, sep="\t" if prs_file.endswith(".txt") else ",")
+    if "Sex" in data.columns and data["Sex"].dtype == "object":
+         print("Converting 'Sex' from Male/Female to 0/1...")
+         data["Sex"] = data["Sex"].map({"Male": 0, "Female": 1})
 
-    print("Detected columns in dataset: ", ", ".join(data.columns))
+    print("Detected columns in dataset:")
+    print(data.dtypes)
     prs_col = input("Enter the column name for Scores: ").strip()
     if prs_col not in data.columns:
         print("Column not found.")
