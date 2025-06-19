@@ -9,13 +9,17 @@ This directory contains scripts used to validate PRS performance.
 - **Confidence Interval (CI)**: For interpreting statistical strength of OR/R²
 - **Cohen’s d**: Effect size between cases and controls
 
+The statistics are calculated for two models:
+- Base Model - T2D ~ Age + Sex
+- Fully Adjusted Model - T2D ~ PRS + Age + Sex
+
 ## Covariates
 Models optionally include:
 - Age
 - Sex
 - Top 'n' principal components (PCs)
 
-## Outputs
+## Visualisations
 - Density plots of PRS distributions
 - Gradient plots of Observed Prevalance of Disease vs PRS 
 
